@@ -276,3 +276,89 @@ p{
     border-radius: 10px;
 }
 
+
+/* --------------------------------------------- BMI Calculator Section ----------------------------------- */
+.bmi-cal-section{
+    margin: 50px 0;
+}
+
+.bmi-section{
+    max-width: 1200px;
+    margin: 0 auto;
+    color: white;
+}
+
+.bmi-section h3{
+    font-size: 1.2rem;
+    color: white;
+    font-weight: 700;
+}
+
+.bmi-content{
+    max-width: 580px;
+    margin: 0 auto;
+}
+
+.bmi-container-section{
+    background-color: var(--bg-color);
+}
+
+.bmi-container{
+    margin: 30px 0 20px;
+    display: flex;
+    gap: 30px;
+}
+
+.bmi-chart{
+    width: 40%;
+}
+
+.bmi-chart table{
+    margin-top: 50px;
+    border-collapse: collapse;
+    border: 1px solid rgba(255, 255, 255, 10%);
+}
+
+.bmi-chart table td,
+.bmi-chart table th{
+    text-align: start;
+    font-size: .8rem;
+    padding: 10px 20px;
+    border: 1px solid rgba(255, 255, 255, 10%);
+}
+
+.bmi-chart td{
+    color: var(--p-color);
+    font-weight: 500;
+}
+
+.bmi-calculate{
+    width: 60%;
+}
+
+.bmi-calculate button{
+    width: 200px;
+}
+
+.form{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.form input,
+.form select{
+    padding: 12px;
+    border-radius: 8px;
+    border: none;
+    color: rgba(255, 255, 255, 60%);
+    background-color: rgba(255, 255, 255, 10%);
+    font-weight: 500;
+}
+
+.activity-select{
+    grid-column: span 2;
+}
+
+
