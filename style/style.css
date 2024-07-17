@@ -50,10 +50,15 @@ body{
     margin-left: 10px;
 }
 
+h2{
+    color: white;
+    font-size: 2rem;
+}
+
 p{
     color: var(--p-color);
     line-height: 1.6;
-    font-size: .9rem;
+    font-size: .8rem;
     margin: 20px 0;
 }
 
@@ -140,6 +145,10 @@ p{
     line-height: .3;
 }
 
+.hero-content p{
+    font-size: .9rem;
+}
+
 .hero-img{
     width: 50%;
     height: 580px;
@@ -191,4 +200,79 @@ p{
     border-radius: 50%;
 }
 
+
+
+
+/* -------------------------------------- Change Your Habits Section ----------------------------- */
+.habits-section{
+    max-width: 1200px;
+    margin: 100px auto 20px;
+    text-align: center;
+}
+
+.habits-content{
+    margin: 0 auto;
+    max-width: 580px;
+}
+
+
+.habits-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+
+.habits-container h4{
+    color: white;
+    margin: 20px 0 -10px;
+}
+
+.habits-item{
+    padding: 20px;
+}
+
+.habits-item img{
+    width: 100%;
+    border-radius: 50%;
+}
+
+
+
+
+
+
+
+/* --------------------------------------- Banner Section --------------------------------------- */
+.banner-section{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    gap: 100px;
+    background-color: var(--bg-color);
+    border-radius: 10px;
+    padding: 20px 20px 20px 30px;
+}
+
+.banner-content,
+.banner-img{
+    width: 50%;
+}
+
+.banner-content{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+}
+
+.banner-img div{
+    height: 250px;
+}
+
+.banner-img div img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
 
