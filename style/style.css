@@ -66,6 +66,14 @@ p{
 /* 
 --------------------------------- Navbar Section ------------------------------
 */
+
+.navbar-section{
+    position: sticky;
+    top: 0;
+    background-color: black;
+    z-index: 10;
+}
+
 .navbar{
     max-width: 1200px;
     margin: 0 auto;
@@ -73,6 +81,7 @@ p{
     align-items: center;
     justify-content: space-between;
     padding: 20px;
+
 }
 
 .menu{
