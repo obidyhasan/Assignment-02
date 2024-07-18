@@ -34,7 +34,7 @@ body{
 .btn-primary{
     background-color: var(--primary-color);
     border: none;
-    padding: 10px 20px;
+    padding: 15px 25px;
     color: white;
     font-weight: 500;
     border-radius: 42px;
@@ -42,8 +42,8 @@ body{
 
 .btn-secondary{
     background-color: transparent;
-    padding: 8px 20px;
-    border: 1.5px solid white;
+    padding: 13px 23px;
+    border: 1px solid white;
     color: white;
     font-weight: 500;
     border-radius: 42px;
@@ -231,9 +231,18 @@ p{
     padding: 20px;
 }
 
+.habits-img{
+    width: 180px;
+    height: 180px;
+    margin: 0 auto;
+}
+
 .habits-item img{
     width: 100%;
+    height: 100%;
     border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid var(--bg-color);
 }
 
 
@@ -277,6 +286,127 @@ p{
 }
 
 
+
+
+/* ------------------------------------------- Our Services ----------------------------------------- */
+.our-services-section{
+    max-width: 1200px;
+    margin: 70px auto;
+}
+
+.our-services-content{
+    max-width: 580px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.our-services-container{
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.our-services-item{
+    padding: 20px 20px 0 20px;
+    border-radius: 10px;
+    background-color: var(--bg-color);
+}
+
+.our-services-item h4{
+    margin-top: 20px;
+    color: white;
+}
+
+.service-icon{
+    background-color: black;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+
+
+
+
+/* ------------------------------------------- Training Section --------------------------------------- */
+.training-section{
+    max-width: 1200px;
+    margin: 50px auto;
+    color: white;
+}
+
+.training-content{
+    max-width: 580px;
+}
+
+.training-container-1{
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: .70fr 1.60fr .70fr;
+    grid-template-rows: repeat(1,200px);
+}
+
+.training-container-2{
+    display: grid;
+    grid-template-columns: 1.30fr .80fr .90fr;
+    grid-template-rows: repeat(1,200px);
+}
+
+.training-item{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.training-item span{
+    display: block;
+    margin: 20px;
+    font-size: .8rem;
+}
+
+.training-item-1{
+    background-image: linear-gradient(rgba(6,255,210,50%), rgba(6,255,210,50%)),url("../assets/images/exercise1.jpg");
+}
+.training-item-1 span,
+.training-item-3 span,
+.training-item-5 span,
+.training-item-6 span{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.training-item-4 span{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.training-item-2{
+    background-image: linear-gradient(rgba(2655,0,0,30%), rgba(2655,0,0,30%)) ,url("../assets/images/exercise2.png");
+}
+
+.training-item-3{
+    background-image: linear-gradient(rgba(0,0,0,50%), rgba(0,0,0,50%)) ,url("../assets/images/exercise3.png");
+}
+
+.training-item-4{
+    background-image: linear-gradient(rgba(0,0,0,50%), rgba(0,0,0,50%)) ,url("../assets/images/exercise4.png");
+}
+
+.training-item-5{
+    background-image: linear-gradient(rgba(66,255,0,30%), rgba(66,255,0,30%)),url("../assets/images/exercise5.jpg");
+}
+
+.training-item-6{
+    background-image: linear-gradient(rgba(0,71,255,30%), rgba(0,71,255,30%)), url("../assets/images/exercise6.jpg");
+}
+
+
+
+
+
 /* --------------------------------------------- BMI Calculator Section ----------------------------------- */
 .bmi-cal-section{
     margin: 50px 0;
@@ -296,7 +426,7 @@ p{
 
 .bmi-content{
     max-width: 580px;
-    margin: 0 auto;
+    margin: 0 auto 50px;
 }
 
 .bmi-container-section{
@@ -381,7 +511,6 @@ p{
     border-radius: 10px;
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    grid-template-rows: repeat(2, 300px);
     gap: 20px;
 }
 
@@ -403,6 +532,10 @@ p{
     color: var(--p-color);
 }
 
+.our-team-item{
+    height: 300px;
+}
+
 .our-team-item img{
     width: 100%;
     height: 100%;
@@ -420,10 +553,10 @@ p{
 .footer-section{
     max-width: 1200px;
     margin: 0 auto;
-    padding: 50px 0;
 }
 
 .footer-container{
+    margin-top: 40px;
     display: grid;
     gap: 20px;
     grid-template-columns: repeat(4, 1fr);
@@ -472,5 +605,160 @@ p{
     font-weight: 300;
     margin: 0 auto;
     color: var(--p-color);
-    margin: 10px 0 -20px;
+    margin: 10px 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* --------------------------------------------- Responsive ----------------------------------------- */
+
+/* Medium Device */
+@media screen and (max-width: 992px){
+
+    .hero-content h1{
+        max-width: 500px;
+    }
+    
+    
+    .hero-content p{
+        max-width: 500px;
+    }
+
+
+    .hero-content{
+        align-items: center;
+        gap: 20px;
+        text-align: center;
+    }
+
+    .menu{
+        display: none;
+    }
+
+    .menu-icon{
+        display: block;
+    }
+
+    .hero-section,
+    .banner-section,
+    .bmi-container{
+        flex-direction: column;
+    }
+
+    .banner-section{
+        gap: 30px;
+    }
+
+    .hero-content,
+    .hero-img,
+    .banner-content,
+    .banner-img,
+    .bmi-chart,
+    .bmi-calculate{
+        width: 100%;
+    }
+
+
+
+    .habits-container,
+    .our-services-container,
+    .our-team-container,
+    .footer-container{
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .training-container-1,
+    .training-container-2{
+        grid-template-columns: repeat(3,1fr);
+    }
+
+    .bmi-content{
+        margin: 0;
+    }
+
+}
+
+
+/* Small Device */
+@media screen and (max-width: 576px){
+
+    h2{
+        font-size: 1.8rem;
+    }
+
+
+    .hero-content h1{
+        max-width: 250px;
+        font-size: 2.5rem;
+    }
+    
+    .hero-content .span-h1{
+        font-size: 4.5rem;
+    }
+    
+    .hero-content p{
+        max-width: 280px;
+        font-size: .9rem;
+    }
+
+    .hero-content{
+        align-items: start;
+        gap: 10px;
+        text-align: start;
+    }
+
+    .habits-container,
+    .our-services-container,
+    .our-team-container,
+    .footer-container,
+    .training-container-1,
+    .training-container-2{
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    .form{
+        grid-template-columns: repeat(2, 50%);
+    }
+
+    .training-container-1,
+    .training-container-2{
+        grid-template-rows: repeat(3,200px);
+    }
+
+    .footer-item-1{
+        grid-column: 1;
+    }
+
+    .habits-section,
+    .our-services-section,
+    .training-section{
+        margin: 0;
+    }
+
+    .training-section{
+        margin-top: 30px;
+    }
+
+    .habits-container{
+        gap: 0;
+    }
+
+    .banner-content button{
+        width: 100%;
+    }
+
 }
