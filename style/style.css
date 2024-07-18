@@ -707,6 +707,7 @@ p{
     .hero-content h1{
         max-width: 250px;
         font-size: 2.5rem;
+        line-height: 1.1;
     }
     
     .hero-content .span-h1{
